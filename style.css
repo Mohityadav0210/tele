@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+:root {
+  --theme-bg-color: #38a2d3f8;
+  --theme-color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  box-shadow: 0 0 2px 0 grey;
+  align-items: center;
+  font-size: 1em;
+
+  background-color: #3761af;
+  background-color: var(--theme-bg-color);
+
+  color: white;
+  color: var(--theme-color);
+}
+
+.item {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  color: var(--theme-color);
+  padding-right: 33px;
+}
+.item img{
+    padding: 10px;
+}
+
+.item.right {
+  margin: 0 0 0 auto;
+}
+
+.navbar .logo {
+  font-size: 1.2em;
+  align-items: center;
+  display: flex;
+}
+
+.logo img {
+  max-width: 40px;
+}
+.item.search {
+  transition: 0.2s linear;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.item.search .search-icon {
+  border-left: 1px solid grey;
+  margin: 2px;
+  padding-left: 10px;
+  cursor: pointer;
+  color: grey;
+}
+.item.search .search-icon:hover {
+  color: black;
+}
+
+.item.search input {
+  width: 100%;
+  padding: 6px;
+  outline: none;
+  border: 2px solid grey;
+  max-width: 100%;
+  border: 0;
+}
+
+.item .search-group {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 20px;
+  border: 2px solid grey;
+  overflow: hidden;
+  background: white;
+
+  border-color: white;
+  color: var(--theme-color);
+}
+.item .search-group select {
+  border: 0;
+  margin: 2px;
+  border-right: 1px solid grey;
+  max-width: 5em;
+  outline: none;
+  color: grey;
+}
+
+.item .group {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  padding-left: px;
+}
+
+.item .group .sub {
+  font-size: 0.8em;
+}
+
+.material-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .item.search input {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .detail,
+  .logo .text {
+    display: none;
+  }
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+.product-card button{
+    color: white;
+    font-size: larger;
+    background-color: rgb(35, 231, 45);
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 200px;
+}
+
+
+.product-card button:hover{
+     box-shadow: 0 4px 8px rgba(247, 243, 243, 0.815);;
+}
+
+
+.product-card img{
+    height: 400px;
+    background-color: blue;
+    border-radius: 20px;
+}
+  /* CSS styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2691cf;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  /* Add more styles as needed */
+
+  /* CSS styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  nav {
+    background-color: #555;
+    padding: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .container {
+    max-width: none;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .sub:hover{
+    text-decoration: underline;
+  }
+  .material-icons img:hover{
+    box-shadow: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .logo img {
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.logo img:hover {
+    transform: rotate(10deg); /* Rotate the logo on hover */
+}
+#menu-icon {
+  display: none; /* Initially hide the menu icon on larger screens */
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li:not(#menu-icon) {
+    display: none; /* Hide the list items except the menu icon on smaller screens */
+  }
+
+  #menu-icon {
+    display: inline; /* Display the menu icon on smaller screens */
+  }
+}
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    font-size: 14px;
+  }
+}
+
+
+  
+  /* Add more styles as needed */
